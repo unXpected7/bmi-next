@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { TaskList } from "../../presentation/components/task"
 import { getTasks, getTaskStats } from "../../data/server-actions/taskActions"
-=======
-import { TaskList } from "../presentation/components/task"
-import { getTasks, getTaskStats } from "../data/server-actions/taskActions"
->>>>>>> parent of da6e5e1 (update)
 
 export default async function Page() {
   const [tasksResult, statsResult] = await Promise.all([

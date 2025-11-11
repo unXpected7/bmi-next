@@ -17,12 +17,6 @@ export const task = pgTable("task", {
   userId: text("user_id")
     .notNull()
     .references(() => user.id, { onDelete: "cascade" }),
-<<<<<<< HEAD
-  projectId: uuid("project_id")
-    .notNull()
-    .references(() => project.id, { onDelete: "cascade" }),
-=======
->>>>>>> parent of da6e5e1 (update)
   createdAt: timestamp("created_at")
     .defaultNow()
     .notNull(),
